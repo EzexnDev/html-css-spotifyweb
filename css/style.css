@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-wrapper {
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+aside {
+    float: left;
+    width: 300px;
+    height: calc(100% - 110px);
+    background-color: rgb(4,4,4);
+    position: relative;
+}
+
+main {
+    float: left;
+    overflow-y: auto;
+    width: calc(100% - 300px);
+    height: calc(100% - 110px);
+    background: rgb(60,62,105);
+    background: #141922;
+    color: white;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(40,40,40);
+}
+
+
+/* Side Menu */
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.container-up {
+    display: flex;
+    flex-direction: column;
+    color: lightgrey;
+    padding-left: 50px;
+}
+
+.container-mid {
+    display: flex;
+    color: lightgrey;
+    padding-left: 50px;
+}
+
+.container-bottom {
+    position: absolute;
+    bottom: 0;
+    color: lightgrey;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.spotify-lg{
+  width: 180px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.spotify-xs{
+  display: none
+}
+
+.fa-home {
+    padding-right: 17px;
+}
+
+.spotify-xs {
+    display: none;
+}
+
+.container-middle div span {
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 15px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+ul li i {
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
+}
+
+.lista2 ul {
+    padding-top: 15px;
+}
+
+.lista2 ul li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+i {
+    vertical-align: middle;
+}
+
+
+
+/* MAIN CSS */
+
+.container-top{
+  height: 70px;
+  max-width: 975px;
+  margin-top: 20px;
+
+}
+
+.top-main-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 900px;
+}
+
+
+.container-center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.main-container-flex {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-left: 85px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+.h1 {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8) ;
+    padding-bottom: 20px;
+}
+
+.h1-a {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8) ;
+    padding-bottom: 5px;
+}
+
+.h3 {
+    width: 100%;
+    color: lightgrey;
+    opacity: 0.7;
+    padding-bottom: 20px;
+}
+
+.quadro {
+    height: 250px;
+    width: 175px;
+    background-color: rgba(40,40,40, 0.5);
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 19px;
+    cursor: pointer;
+}

@@ -16,6 +16,7 @@ aside {
     height: calc(100% - 110px);
     background-color: rgb(4,4,4);
     position: relative;
+    overflow-y: auto;
 }
 
 main {
@@ -63,6 +64,8 @@ footer {
     color: lightgrey;
     padding-left: 50px;
     padding-bottom: 20px;
+    width: 100%;
+    padding-right: 50px;
 }
 
 .spotify-lg{
@@ -124,27 +127,51 @@ i {
     vertical-align: middle;
 }
 
-
+.upgrade-button{
+ border-radius: 25px;
+ border: 1px solid white;
+ color: white;
+ padding: 10px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ background-color: #080B12;
+}
 
 /* MAIN CSS */
 
 .container-top{
   height: 70px;
-  max-width: 975px;
   margin-top: 20px;
+}
 
+.upgrade-container{
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #080B12;
+  padding-right: 10px;
 }
 
 .top-main-container{
-  display:flex;
+  height: 70px;
+  display: flex;
+  justify-content:space-around;
   align-items: center;
-  justify-content: space-around;
-  max-width: 900px;
+  text-transform: uppercase;
 }
 
-
-.container-center {
-    max-width: 1200px;
+.user{
+  border-top: 1px solid white;
+  width: 100%
+}
+.center-container {
+    max-width: 1920px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -180,11 +207,375 @@ i {
 
 .quadro {
     height: 250px;
-    width: 175px;
-    background-color: rgba(40,40,40, 0.5);
+    width: 200px;
     border-radius: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 19px;
+    margin-bottom: 30px;
     cursor: pointer;
+}
+
+.quadro:hover {
+    transform: scale(1.014);
+}
+
+.quadro-images {
+    object-fit: cover;
+    width: 100%;
+    height: 66%;
+    border-radius: 2px;
+    margin-bottom: 13%;
+    position: relative;
+}
+
+.quadro-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    margin-bottom: 13%;
+    box-shadow: 0px 0px 19px -5px black;
+}
+
+.play-hover {
+    color: #1ed760;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.play-hover:hover{
+    opacity: 1;
+}
+
+
+/* Footer */
+.container-footer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.foot-left{
+  width: 22%;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.foot-left i{
+  color: white;
+}
+
+.foot-left-img {
+    width: 38%;
+    height: 100%;
+    display: inline-block;
+}
+
+.foot-left-img img {
+    cursor: pointer;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.foot-left-text {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.foot-left-text span {
+    font-weight: bold;
+    color: white;
+}
+.foot-left-text h6 {
+    font-weight: 700;
+    color: lightgrey;
+}
+
+.foot-left-icon {
+    width: 15%;
+    color: white;
+}
+
+.foot-left-icon i {
+    color: white;
+    cursor: pointer;
+}
+
+.foot-left-icon i:hover {
+    color: red;
+}
+
+.foot-center {
+    float: left;
+    width: 45%;
+    padding: 18px;
+}
+
+.commands-player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+    color: lightgrey;
+    margin: 0 auto;
+}
+
+.commands-player i {
+    cursor: pointer;
+}
+
+.commands-player i:hover {
+    color: white;
+}
+
+.fas.fa-2x.fa-pause-circle:hover {
+    transform: scale(1.1)
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    color: lightgrey;
+    font-size: 12px;
+}
+
+.player span{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#range-player {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#range-player::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: lightgrey;
+  cursor: pointer;
+}
+
+
+.foot-right {
+  float: left;
+  width: 15%;
+  padding: 18px;
+  color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icons {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 25%;
+}
+
+.icons i {
+    cursor: pointer;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+}
+
+.icons i:hover {
+    color: white;
+}
+
+.range {
+  display: inline-block;
+  width: 100%;
+  height: 30%;
+  float: right;
+
+}
+
+
+#range-volume {
+    width: 80%;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+
+#range-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: lightgrey;
+  cursor: pointer;
+}
+
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 614px) {
+
+    .main-container-flex {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .h1, .h1-a, .h3 {
+        text-align: center;
+    }
+
+    #range-volume {
+        display: none;
+    }
+
+    .commands-player {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #minute {
+        display: none
+    }
+
+}
+
+@media all and (max-width: 767px) {
+
+    aside {
+        width: 90px;
+    }
+
+    .spotify-xs {
+        display: block;
+        width: 35px;
+        margin: 25px 0;
+    }
+
+    .spotify-lg {
+        display: none;
+    }
+
+    .container-up, .container-bottom {
+        padding-left: 33px;
+    }
+
+    ul li span, .lista2 {
+        display: none;
+    }
+
+    ul li i {
+        padding: 0;
+        text-align: center;
+    }
+
+    .top-main-container-hamburger {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    main {
+        width: calc(100% - 90px);
+
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .foot-left {
+        width: 38%;
+    }
+
+    .foot-left-image {
+        width: 70%;
+    }
+
+    .foot-left-text {
+        display: none;
+    }
+
+    .foot-left-heart i {
+        padding-left: 15px;
+    }
+
+    .foot-center {
+        width: 62%;
+    }
+
+
+    .player {
+        font-size: 11px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+
+    aside {
+        width: 250px;
+    }
+
+    .container-up, .container-middle, .container-bottom {
+        padding-left: 40px;
+    }
+
+    .spotify-lg {
+        width: 130px;
+    }
+
+    main {
+            width: calc(100% - 250px);
+        }
+
+    .top-main-container-hamburger {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .foot-left {
+        width: 30%;
+    }
+
+    .foot-center {
+        width: 50%;
+    }
+}
+
+@media all and (max-height: 660px) {
+  .container-bottom{
+    display: none;
+  }
 }
